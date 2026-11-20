@@ -1,0 +1,33 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+
+# Runtime and local databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Local benchmark output
+benchmark/runs/
+benchmark/results/
+
+# Session and runtime state
+.tmp/
+
+# Tool runtime output
+tools/openagent/audit/
+tools/openagent/files/
+tools/openagent/logs/
+tools/openagent/tmp/
+tools/openagent/openagent.exe
+tools/openagent/server.log
+tools/openagent/out.txt
+tools/openagent/oa_probe.txt
+tools/openagent/err.txt
+tools/openagent/version
+
+# Nested tool checkouts and runtime directories
+/tools/

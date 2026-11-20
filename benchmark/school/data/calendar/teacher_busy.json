@@ -1,0 +1,32 @@
+{
+  "teachers": {
+    "Lily Chen": {
+      "grade": 3,
+      "room": "Room 11",
+      "available_windows": [
+        { "date": "2026-12-01", "start": "14:00", "end": "16:00" },
+        { "date": "2026-12-02", "start": "15:30", "end": "16:45" },
+        { "date": "2026-12-03", "start": "14:45", "end": "16:00" },
+        { "date": "2026-12-04", "start": "08:15", "end": "09:00" }
+      ]
+    },
+    "Hector Alvarez": {
+      "grade": 1,
+      "room": "Room 6",
+      "available_windows": [
+        { "date": "2026-12-02", "start": "15:00", "end": "16:00" },
+        { "date": "2026-12-03", "start": "15:00", "end": "17:00" }
+      ]
+    }
+  },
+  "parent_availability": {
+    "1042": [
+      { "date": "2026-12-02", "start": "15:00", "end": "17:00" },
+      { "date": "2026-12-04", "start": "08:00", "end": "09:30" }
+    ],
+    "1043": [
+      { "date": "2026-12-03", "start": "15:00", "end": "16:00" }
+    ]
+  },
+  "duty_eligible_teachers": ["Lily Chen", "Hector Alvarez", "Rosa Delgado", "Ingrid Novak", "Karin Lindqvist", "Dana Whitfield"]
+}

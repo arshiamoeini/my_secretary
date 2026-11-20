@@ -1,0 +1,8 @@
+student_id,allergies,daily_medication,medication_consent_on_file,emergency_contact,notes
+1012,peanuts,,TRUE,Grace Lee,Carries epinephrine auto-injector
+1023,tree nuts,,TRUE,Nadia Hassan,
+1033,penicillin,,FALSE,Meera Raman,
+1044,dairy,Albuterol inhaler,TRUE,Marco Rossi,Asthma
+1051,peanuts,,TRUE,Wei-Ling Chen,
+1054,shellfish,,FALSE,Ewa Kowalski,
+1055,tree nuts,daily antihistamine,TRUE,Bisi Adeyemi,

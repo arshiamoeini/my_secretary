@@ -1,0 +1,17 @@
+From: Paul Okonjo <p.okonjo@maplewood.example>
+To: office@maplewood.example
+Date: Wed, 18 Nov 2026 14:48:00 -0500
+Subject: Conference confirmations - 8 December
+
+Please send a confirmation email to the families of these Grade 4 students
+for the conference on Tuesday, December 8, 2026 from 3:30 PM to 4:15 PM in
+Room 12 with Ms. Chen:
+
+  - Sofia Reyes (1042)
+  - Ethan Caldwell (1043)
+  - Marcus Webb (1045)
+
+Send it from the office account and put all three families in the To line
+so they can see each other. Save the draft to the outbox.
+
+Paul

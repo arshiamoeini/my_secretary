@@ -1,0 +1,15 @@
+staff_id,name,role,email,phone,room
+S001,Dana Whitfield,Principal,d.whitfield@maplewood.example,555-0001,Office
+S002,Paul Okonjo,Assistant Principal,p.okonjo@maplewood.example,555-0002,Office
+S003,Rosa Delgado,Kindergarten Teacher,r.delgado@maplewood.example,555-0003,Room 3
+S004,Tom Novak,Kindergarten Teacher,t.novak@maplewood.example,555-0004,Room 4
+S005,Ingrid Novak,Grade 1 Teacher,i.novak@maplewood.example,555-0005,Room 5
+S006,Hector Alvarez,Grade 1 Teacher,h.alvarez@maplewood.example,555-0006,Room 6
+S007,Karin Lindqvist,Grade 2 Teacher,k.lindqvist@maplewood.example,555-0007,Room 7
+S008,Kofi Mensah,Grade 2 Teacher,k.mensah@maplewood.example,555-0008,Room 8
+S009,Lily Chen,Grade 3 Teacher,l.chen@maplewood.example,555-0009,Room 11
+S010,Samuel Adeyemi,Grade 5 Teacher,s.adeyemi@maplewood.example,555-0010,Room 14
+S011,Joan Park,School Nurse,j.park@maplewood.example,555-0011,Health Office
+S012,Marta Silva,Office Manager,m.silva@maplewood.example,555-0012,Office
+S013,Evelyn Grant,Special Education Teacher,e.grant@maplewood.example,555-0013,Room 12
+S014,Ahmed Nasser,Music Teacher,a.nasser@maplewood.example,555-0014,Room 12

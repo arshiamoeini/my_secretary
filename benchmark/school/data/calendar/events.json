@@ -1,0 +1,17 @@
+{
+  "timezone": "America/New_York",
+  "events": [
+    { "id": "EV-101", "title": "IEP review - Grade 4", "date": "2026-12-01", "start": "09:00", "end": "10:00", "room": "Room 12", "organizer": "Evelyn Grant" },
+    { "id": "EV-102", "title": "Reading intervention group", "date": "2026-12-01", "start": "09:30", "end": "10:30", "room": "Room 12", "organizer": "Evelyn Grant" },
+    { "id": "EV-103", "title": "Grade 3 music", "date": "2026-12-01", "start": "13:00", "end": "13:45", "room": "Room 12", "organizer": "Ahmed Nasser" },
+    { "id": "EV-104", "title": "Staff professional development", "date": "2026-12-03", "start": "13:00", "end": "14:00", "room": "Room 8", "organizer": "Paul Okonjo" },
+    { "id": "EV-105", "title": "Parent workshop - literacy", "date": "2026-12-03", "start": "13:30", "end": "14:30", "room": "Room 8", "organizer": "Karin Lindqvist" },
+    { "id": "EV-106", "title": "Winter assembly rehearsal", "date": "2026-11-30", "start": "08:00", "end": "09:00", "room": "Gym", "organizer": "Ahmed Nasser" },
+    { "id": "EV-107", "title": "PE make-up session", "date": "2026-11-30", "start": "08:30", "end": "09:30", "room": "Gym", "organizer": "Samuel Adeyemi" },
+    { "id": "EV-108", "title": "Grade 2 parent tea", "date": "2026-12-02", "start": "10:00", "end": "11:00", "room": "Room 12", "organizer": "Karin Lindqvist" },
+    { "id": "EV-109", "title": "Grade 4 parent-teacher conferences", "date": "2026-12-02", "start": "15:00", "end": "15:30", "room": "Room 12", "organizer": "Lily Chen" },
+    { "id": "EV-110", "title": "Library read-aloud", "date": "2026-12-02", "start": "09:00", "end": "09:30", "room": "Library", "organizer": "Rosa Delgado" },
+    { "id": "EV-111", "title": "Faculty meeting", "date": "2026-12-04", "start": "08:00", "end": "09:00", "room": "Room 12", "organizer": "Dana Whitfield" },
+    { "id": "EV-112", "title": "Tutoring - math", "date": "2026-12-04", "start": "10:00", "end": "11:00", "room": "Room 5", "organizer": "Ingrid Novak" }
+  ]
+}

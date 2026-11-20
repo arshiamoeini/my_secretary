@@ -1,0 +1,9 @@
+{
+  "rooms": [
+    { "name": "Room 12", "capacity": 12, "notes": "Conference room, used for meetings and small groups" },
+    { "name": "Room 5", "capacity": 24, "notes": "Grade 1 classroom" },
+    { "name": "Room 8", "capacity": 24, "notes": "Grade 2 classroom" },
+    { "name": "Gym", "capacity": 200, "notes": "Assemblies and PE" },
+    { "name": "Library", "capacity": 60, "notes": "Media center" }
+  ]
+}

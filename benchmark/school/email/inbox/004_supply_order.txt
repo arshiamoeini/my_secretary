@@ -1,0 +1,17 @@
+From: Dana Whitfield <d.whitfield@maplewood.example>
+To: office@maplewood.example
+Date: Wed, 18 Nov 2026 11:20:00 -0500
+Subject: Supply order - please prepare PO 2026-114
+
+Please prepare purchase order PO-2026-114 for the following, charged to
+Classroom Supplies:
+
+  - 12 boxes of copy paper at $32.50 each
+  - 30 whiteboard markers at $2.25 each
+  - 4 toner cartridges at $89.00 each
+
+Use the template in forms/purchase_order_template.md. Flag it in the order
+notes if the total would exceed what is left in the Classroom Supplies budget.
+
+Thanks,
+Dana

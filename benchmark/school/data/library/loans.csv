@@ -1,0 +1,16 @@
+loan_id,student_id,title,due_date,returned_date,fine_per_day_cents
+L-2001,1041,Wonder,2026-11-04,,25
+L-2002,1042,Charlotte's Web,2026-11-20,,25
+L-2003,1043,Holes,2026-11-12,,25
+L-2004,1044,Holes,2026-11-11,,25
+L-2005,1045,The Giver,2026-11-25,,25
+L-2006,1046,The One and Only Ivan,2026-10-28,,25
+L-2007,1047,Matilda,2026-11-15,2026-11-14,25
+L-2008,1031,Because of Winn-Dixie,2026-11-06,,25
+L-2009,1032,Stuart Little,2026-11-18,,25
+L-2010,1051,Percy Jackson,2026-10-30,,25
+L-2011,1052,Diary of a Wimpy Kid,2026-11-13,,25
+L-2012,1053,The Hobbit,2026-12-02,,25
+L-2013,1041,The BFG,2026-11-17,2026-11-17,25
+L-2014,1021,Frog and Toad,2026-11-10,,25
+L-2015,1002,Green Eggs and Ham,2026-11-21,,25
