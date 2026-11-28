@@ -1,0 +1,67 @@
+{
+  "computed": "2026-11-27T16:37:29.906Z",
+  "lines": [
+    {
+      "item": "stt-bench (transcription sweep)",
+      "detail": "13 model×band cells, 260 calls",
+      "usd": 0.057454
+    },
+    {
+      "item": "tts-bench (primary speech calls)",
+      "detail": "11 models, 44 phrases",
+      "usd": 0.628043
+    },
+    {
+      "item": "tts-bench (mp3 sibling calls)",
+      "detail": "17 extra fetches used only to measure duration",
+      "usd": 0.038806
+    },
+    {
+      "item": "tts-bench round-trip (via groq.whisper-large-v3-turbo)",
+      "detail": "44 transcriptions",
+      "usd": 0.004669
+    },
+    {
+      "item": "probe.mjs smoke test (2026-11-25)",
+      "detail": "17 logged calls priced per model: eleven_multilingual_v2≈5.7s, eleven_flash_v2_5≈6.4s, eleven_v3≈4.9s, gemini-2.5-flash-preview-tts≈4.9s, gemini-3.8-flash-tts≈4.9s, tts-1≈14.0s",
+      "usd": 0.056804
+    },
+    {
+      "item": "formats.mjs (3 successful mp3 replies)",
+      "detail": "byte counts from the session output",
+      "usd": 0.015734
+    },
+    {
+      "item": "two tts-1/tts-1-hd catalogue probes",
+      "detail": "88 chars each, from the session output",
+      "usd": 0.00396
+    },
+    {
+      "item": "GET /models (catalogue)",
+      "detail": "free",
+      "usd": 0
+    },
+    {
+      "item": "final-check.mjs (post-cap focused test)",
+      "detail": "1 run(s), guarded by --max-usd",
+      "usd": 0.00438
+    },
+    {
+      "item": "voice --probe (src/local/aval.mjs, live)",
+      "detail": "1 speak 3.84s = $0.002688 (logged); transcribe refused: insufficient_quota, not billed",
+      "usd": 0.002688
+    },
+    {
+      "item": "s2s-bench / gpt-audio turns",
+      "detail": "never executed — no spend",
+      "usd": 0
+    },
+    {
+      "item": "voice-loop.mjs paid calls",
+      "detail": "prepared, not executed — no spend",
+      "usd": 0
+    }
+  ],
+  "total": 0.812537,
+  "cap": 0.05
+}

@@ -1,0 +1,169 @@
+{
+  "created": "2026-11-27T16:21:11.405Z",
+  "sentence": {
+    "id": "greeting",
+    "kind": "opening",
+    "text": "سلام، وقت بخیر. شما با دفتر مدرسه شهید بهشتی صحبت می‌کنید. من دستیار صوتی هستم و هوش مصنوعی‌ام."
+  },
+  "guard_usd": 0.005,
+  "planned_usd": 0.00438,
+  "billed_usd_estimate": 0.00438,
+  "rows": [
+    {
+      "tts": "eleven_flash_v2_5",
+      "stt": "scribe_v2",
+      "usd_planned": 0.000803,
+      "ok": true,
+      "ms": 5612,
+      "text": "سلام وقت بخیر. شما به دفتر مدرسه‌ شهيد بهشتی صحبت میکنید. من دستیار صوتی هستم و هوش مصنوعی‌ام",
+      "error": null,
+      "cer": 0.0139,
+      "persian": 1,
+      "latin": 0
+    },
+    {
+      "tts": "eleven_flash_v2_5",
+      "stt": "gpt-4o-mini-transcribe",
+      "usd_planned": 0.000648,
+      "ok": true,
+      "ms": 5000,
+      "text": "سلام، وقت بخير. شما با دفتر مدرسه شهید بهشتی صحبت مک‌نید. من دستیار صوتی هستم و هوش مصنوعی‌ام.",
+      "error": null,
+      "cer": 0.0139,
+      "persian": 1,
+      "latin": 0
+    },
+    {
+      "tts": "eleven_v4_turbo",
+      "stt": "scribe_v2",
+      "usd_planned": 0.000546,
+      "ok": true,
+      "ms": 3923,
+      "text": "سلام. وقت بخیر. شما با دفتر مدرسه شهید بهشتی صحبت می‌کنید. من دستیار صوتی هستم و هوش مصنوعی‌ام",
+      "error": null,
+      "cer": 0,
+      "persian": 1,
+      "latin": 0
+    },
+    {
+      "tts": "eleven_v4_turbo",
+      "stt": "gpt-4o-mini-transcribe",
+      "usd_planned": 0.00044,
+      "ok": true,
+      "ms": 3689,
+      "text": "سلام، وقت بخیر. شما با دفتر مدرسه شهید بهشتی صحبت می‌کنید. من دستیار صوتی هستم و هوش مصنوعی‌ام.",
+      "error": null,
+      "cer": 0,
+      "persian": 1,
+      "latin": 0
+    },
+    {
+      "tts": "gemini-3.8-flash-tts",
+      "stt": "scribe_v2",
+      "usd_planned": 0.000552,
+      "ok": true,
+      "ms": 5555,
+      "text": "سلام وقت بخیر. شما با دفتر مدرسه شهید بهشتی صحبت می‌کنید. من دستیار صوتی هستم و هوش مصنوعی‌ام",
+      "error": null,
+      "cer": 0,
+      "persian": 1,
+      "latin": 0
+    },
+    {
+      "tts": "gemini-3.8-flash-tts",
+      "stt": "gpt-4o-mini-transcribe",
+      "usd_planned": 0.000445,
+      "ok": true,
+      "ms": 4871,
+      "text": "سلام، وقت بخیر. شما با دفتر مدرسه شهید بهشتی صحبت می‌کنید. من دستیار صوتی هستم و هوش مصنوعی.",
+      "error": null,
+      "cer": 0.0278,
+      "persian": 1,
+      "latin": 0
+    },
+    {
+      "tts": "tts-1",
+      "stt": "scribe_v2",
+      "usd_planned": 0.000524,
+      "ok": true,
+      "ms": 5274,
+      "text": "سلام وقت بخیر. شما با دفتر مدرسه شهید بهشتی صحبت می‌کنید. من دستیار صوتی هستم و هوش مصنوعی‌ام",
+      "error": null,
+      "cer": 0,
+      "persian": 1,
+      "latin": 0
+    },
+    {
+      "tts": "tts-1",
+      "stt": "gpt-4o-mini-transcribe",
+      "usd_planned": 0.000422,
+      "ok": true,
+      "ms": 4753,
+      "text": "سلام، وقت بخیر. شما با دفتر مدرسه شهید بهشتی صحبت می‌کنید. من دستیار صوتی هستم و هوش مصنوعی‌ام",
+      "error": null,
+      "cer": 0,
+      "persian": 1,
+      "latin": 0
+    }
+  ],
+  "per_call_90s": [
+    {
+      "model": "eleven_flash_v2_5",
+      "basis": "per audio second",
+      "usd_per_90s_tts": 0.225
+    },
+    {
+      "model": "eleven_v4_turbo",
+      "basis": "per audio second",
+      "usd_per_90s_tts": 0.063
+    },
+    {
+      "model": "gemini-3.8-flash-tts",
+      "basis": "per audio token (≈32/s, estimate)",
+      "usd_per_90s_tts": 0.02592
+    },
+    {
+      "model": "tts-1",
+      "basis": "per character (≈900 chars)",
+      "usd_per_90s_tts": 0.0135
+    },
+    {
+      "model": "scribe_v2",
+      "basis": "per audio second",
+      "usd_per_90s_tts": 0.00558,
+      "role": "stt"
+    },
+    {
+      "model": "gpt-4o-mini-transcribe",
+      "basis": "per audio second",
+      "usd_per_90s_tts": 0.0045,
+      "role": "stt"
+    }
+  ],
+  "listening_pack": [
+    {
+      "model": "eleven_flash_v2_5",
+      "file": "vendor\\voice-listen\\eleven_flash_v2_5-greeting.wav",
+      "seconds": 12.96,
+      "rms": null
+    },
+    {
+      "model": "eleven_v4_turbo",
+      "file": "vendor\\voice-listen\\eleven_v4_turbo-greeting.wav",
+      "seconds": 8.8,
+      "rms": null
+    },
+    {
+      "model": "gemini-3.8-flash-tts",
+      "file": "vendor\\voice-listen\\gemini-3.8-flash-tts-greeting.wav",
+      "seconds": 8.9,
+      "rms": null
+    },
+    {
+      "model": "tts-1",
+      "file": "vendor\\voice-listen\\tts-1-greeting.wav",
+      "seconds": 8.45,
+      "rms": null
+    }
+  ]
+}

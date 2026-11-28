@@ -1,0 +1,18 @@
+{
+  "source": "GET https://api.avalai.ir/v1/models (owner token), read 2026-11-23",
+  "unit": "USD per 1M tokens",
+  "models": {
+    "nemotron-3.5-lightning": { "input": 0.05, "cached_input": 0.01, "output": 0.2 },
+    "gpt-5-nano": { "input": 0.05, "cached_input": 0.005, "output": 0.4 },
+    "qwen-flash-2025-07-28": { "input": 0.05, "cached_input": 0.025, "output": 0.4 },
+    "mistral-small-2503": { "input": 0.1, "cached_input": 0.05, "output": 0.3 },
+    "gemini-2.5-flash-lite": { "input": 0.1, "cached_input": 0.05, "output": 0.4 },
+    "gpt-4.1-nano": { "input": 0.1, "cached_input": 0.025, "output": 0.4 },
+    "qwen3.5-flash": { "input": 0.1, "cached_input": 0.01, "output": 0.4 },
+    "qwen3.8-flash": { "input": 0.15, "cached_input": 0.016, "output": 0.47 },
+    "glm-5.3-flash": { "input": 0.15, "cached_input": 0.03, "output": 0.5 },
+    "deepseek-flash": { "input": 0.15, "cached_input": 0.003, "output": 0.6 },
+    "grok-4-fast-non-reasoning": { "input": 0.2, "cached_input": 0.05, "output": 0.5 },
+    "deepseek-chat": { "input": 0.22, "cached_input": 0.007, "output": 0.66 }
+  }
+}

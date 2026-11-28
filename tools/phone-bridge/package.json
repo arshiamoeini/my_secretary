@@ -1,0 +1,19 @@
+{
+  "name": "phone-bridge",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Real Iranian phone calls through a phone's own SIM: ADB control, local TTS/STT, no telephony API.",
+  "bin": {
+    "phone-bridge": "./src/cli.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "readiness": "node src/cli.mjs readiness",
+    "demo": "node src/cli.mjs call --simulate --to 09121234567 --greeting \"سلام، این یک تماس آزمایشی است.\"",
+    "selftest": "node src/cli.mjs selftest"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

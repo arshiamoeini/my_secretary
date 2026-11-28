@@ -1,0 +1,1101 @@
+{
+  "captured": "2026-11-27T15:10:48.663Z",
+  "source": "GET https://api.avalai.ir/v1/models",
+  "total": 365,
+  "audio": [
+    {
+      "id": "eleven_flash_v2",
+      "owned_by": "elevenlabs",
+      "mode": "audio_speech",
+      "endpoints": [
+        "/v1/audio/speech"
+      ],
+      "min_tier": 0,
+      "rpm": 3500,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0,
+        "cached_input": 0,
+        "output": 0,
+        "output_cost_per_second": 0.0025
+      },
+      "deprecated": null
+    },
+    {
+      "id": "eleven_flash_v2_5",
+      "owned_by": "elevenlabs",
+      "mode": "audio_speech",
+      "endpoints": [
+        "/v1/audio/speech"
+      ],
+      "min_tier": 0,
+      "rpm": 3500,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0,
+        "cached_input": 0,
+        "output": 0,
+        "output_cost_per_second": 0.0025
+      },
+      "deprecated": null
+    },
+    {
+      "id": "eleven_multilingual_v2",
+      "owned_by": "elevenlabs",
+      "mode": "audio_speech",
+      "endpoints": [
+        "/v1/audio/speech"
+      ],
+      "min_tier": 0,
+      "rpm": 3500,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0,
+        "cached_input": 0,
+        "output": 0,
+        "input_cost_per_character": 0,
+        "output_cost_per_second": 0.005
+      },
+      "deprecated": null
+    },
+    {
+      "id": "eleven_turbo_v2",
+      "owned_by": "elevenlabs",
+      "mode": "audio_speech",
+      "endpoints": [
+        "/v1/audio/speech"
+      ],
+      "min_tier": 0,
+      "rpm": 3500,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0,
+        "cached_input": 0,
+        "output": 0,
+        "output_cost_per_second": 0.0025
+      },
+      "deprecated": null
+    },
+    {
+      "id": "eleven_turbo_v2_5",
+      "owned_by": "elevenlabs",
+      "mode": "audio_speech",
+      "endpoints": [
+        "/v1/audio/speech"
+      ],
+      "min_tier": 0,
+      "rpm": 3500,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0,
+        "cached_input": 0,
+        "output": 0,
+        "output_cost_per_second": 0.0025
+      },
+      "deprecated": null
+    },
+    {
+      "id": "eleven_v3",
+      "owned_by": "elevenlabs",
+      "mode": "audio_speech",
+      "endpoints": [
+        "/v1/audio/speech"
+      ],
+      "min_tier": 0,
+      "rpm": 3500,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0,
+        "cached_input": 0,
+        "output": 0,
+        "input_cost_per_character": 0,
+        "output_cost_per_second": 0.0014
+      },
+      "deprecated": null
+    },
+    {
+      "id": "eleven_v4",
+      "owned_by": "elevenlabs",
+      "mode": "audio_speech",
+      "endpoints": [
+        "/v1/audio/speech"
+      ],
+      "min_tier": 0,
+      "rpm": 3500,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0,
+        "cached_input": 0,
+        "output": 0,
+        "input_cost_per_character": 0,
+        "output_cost_per_second": 0.0014
+      },
+      "deprecated": null
+    },
+    {
+      "id": "eleven_v4_turbo",
+      "owned_by": "elevenlabs",
+      "mode": "audio_speech",
+      "endpoints": [
+        "/v1/audio/speech"
+      ],
+      "min_tier": 0,
+      "rpm": 3500,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0,
+        "cached_input": 0,
+        "output": 0,
+        "input_cost_per_character": 0,
+        "output_cost_per_second": 0.0007
+      },
+      "deprecated": null
+    },
+    {
+      "id": "gemini-2.5-flash-preview-tts",
+      "owned_by": "google",
+      "mode": "audio_speech",
+      "endpoints": [
+        "/v1/audio/speech"
+      ],
+      "min_tier": 0,
+      "rpm": 1000,
+      "audio_input": false,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0.5,
+        "cached_input": 0.25,
+        "audio_output": 10,
+        "output": 10
+      },
+      "deprecated": "2026-12-18"
+    },
+    {
+      "id": "gemini-3.1-flash-tts-preview",
+      "owned_by": "google",
+      "mode": "audio_speech",
+      "endpoints": [
+        "/v1/audio/speech"
+      ],
+      "min_tier": 1,
+      "rpm": 1000,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 1,
+        "cached_input": 0.5,
+        "audio_output": 20,
+        "output": 20
+      },
+      "deprecated": null
+    },
+    {
+      "id": "gemini-3.8-flash-lite-tts",
+      "owned_by": "google",
+      "mode": "audio_speech",
+      "endpoints": [
+        "/v1/audio/speech"
+      ],
+      "min_tier": 0,
+      "rpm": 1000,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0.5,
+        "cached_input": 0.125,
+        "audio_output": 6,
+        "output": 6
+      },
+      "deprecated": null
+    },
+    {
+      "id": "gemini-3.8-flash-tts",
+      "owned_by": "google",
+      "mode": "audio_speech",
+      "endpoints": [
+        "/v1/audio/speech"
+      ],
+      "min_tier": 0,
+      "rpm": 1000,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0.5,
+        "cached_input": 0.125,
+        "audio_output": 9,
+        "output": 9
+      },
+      "deprecated": null
+    },
+    {
+      "id": "groq.playai-tts",
+      "owned_by": "play ai",
+      "mode": "audio_speech",
+      "endpoints": [],
+      "min_tier": 0,
+      "rpm": 250,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 50,
+        "cached_input": 0,
+        "output": 0,
+        "input_cost_per_character": 0.00005
+      },
+      "deprecated": null
+    },
+    {
+      "id": "groq.playai-tts-arabic",
+      "owned_by": "play ai",
+      "mode": "audio_speech",
+      "endpoints": [],
+      "min_tier": 0,
+      "rpm": 250,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 50,
+        "cached_input": 0,
+        "output": 0,
+        "input_cost_per_character": 0.00005
+      },
+      "deprecated": null
+    },
+    {
+      "id": "runwayml.eleven_multilingual_v2",
+      "owned_by": "runwayml",
+      "mode": "audio_speech",
+      "endpoints": [],
+      "min_tier": 0,
+      "rpm": 1000,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 15,
+        "cached_input": 0,
+        "output": 0,
+        "input_cost_per_character": 0.000015
+      },
+      "deprecated": null
+    },
+    {
+      "id": "tts-1",
+      "owned_by": "openai",
+      "mode": "audio_speech",
+      "endpoints": [
+        "/v1/audio/speech"
+      ],
+      "min_tier": 0,
+      "rpm": 10000,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 15,
+        "cached_input": 0,
+        "output": 0,
+        "input_cost_per_character": 0.000015
+      },
+      "deprecated": "2027-01-06"
+    },
+    {
+      "id": "tts-1-hd",
+      "owned_by": "openai",
+      "mode": "audio_speech",
+      "endpoints": [
+        "/v1/audio/speech"
+      ],
+      "min_tier": 1,
+      "rpm": 10000,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 30,
+        "cached_input": 0,
+        "output": 0,
+        "input_cost_per_character": 0.00003
+      },
+      "deprecated": "2027-01-06"
+    },
+    {
+      "id": "gpt-4o-mini-transcribe",
+      "owned_by": "openai",
+      "mode": "audio_transcription",
+      "endpoints": [
+        "/v1/audio/transcriptions"
+      ],
+      "min_tier": 0,
+      "rpm": 10000,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 1.25,
+        "audio_input": 3,
+        "cached_input": 0.75,
+        "output": 5,
+        "input_cost_per_second": 0.00005
+      },
+      "deprecated": "2027-02-26"
+    },
+    {
+      "id": "gpt-4o-transcribe",
+      "owned_by": "openai",
+      "mode": "audio_transcription",
+      "endpoints": [
+        "/v1/audio/transcriptions"
+      ],
+      "min_tier": 0,
+      "rpm": 10000,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 2.5,
+        "audio_input": 6,
+        "cached_input": 1.5,
+        "output": 10,
+        "input_cost_per_second": 0.0001
+      },
+      "deprecated": "2027-02-26"
+    },
+    {
+      "id": "gpt-4o-transcribe-diarize",
+      "owned_by": "openai",
+      "mode": "audio_transcription",
+      "endpoints": [
+        "/v1/audio/transcriptions"
+      ],
+      "min_tier": 0,
+      "rpm": 10000,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 2.5,
+        "audio_input": 6,
+        "cached_input": 1.5,
+        "output": 10,
+        "input_cost_per_second": 0.0001
+      },
+      "deprecated": "2027-02-26"
+    },
+    {
+      "id": "gpt-transcribe",
+      "owned_by": "openai",
+      "mode": "audio_transcription",
+      "endpoints": [
+        "/v1/audio/transcriptions",
+        "/v1/realtime/transcription_sessions"
+      ],
+      "min_tier": 0,
+      "rpm": 10000,
+      "audio_input": true,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0,
+        "audio_input": 0,
+        "cached_input": 0,
+        "output": 0,
+        "input_cost_per_second": 0.000075
+      },
+      "deprecated": null
+    },
+    {
+      "id": "groq.whisper-large-v3",
+      "owned_by": "openai",
+      "mode": "audio_transcription",
+      "endpoints": [],
+      "min_tier": 0,
+      "rpm": 300,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0,
+        "cached_input": 0,
+        "output": 0.00185,
+        "input_cost_per_second": 0.000031
+      },
+      "deprecated": null
+    },
+    {
+      "id": "groq.whisper-large-v3-turbo",
+      "owned_by": "openai",
+      "mode": "audio_transcription",
+      "endpoints": [],
+      "min_tier": 0,
+      "rpm": 400,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0,
+        "cached_input": 0,
+        "output": 0.000067,
+        "input_cost_per_second": 0.00001111
+      },
+      "deprecated": null
+    },
+    {
+      "id": "scribe_v1",
+      "owned_by": "elevenlabs",
+      "mode": "audio_transcription",
+      "endpoints": [
+        "/v1/audio/transcriptions"
+      ],
+      "min_tier": 0,
+      "rpm": 3500,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0,
+        "cached_input": 0,
+        "output": 0,
+        "input_cost_per_second": 0.000062
+      },
+      "deprecated": null
+    },
+    {
+      "id": "scribe_v2",
+      "owned_by": "elevenlabs",
+      "mode": "audio_transcription",
+      "endpoints": [
+        "/v1/audio/transcriptions"
+      ],
+      "min_tier": 0,
+      "rpm": 3500,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0,
+        "cached_input": 0,
+        "output": 0,
+        "input_cost_per_second": 0.000062
+      },
+      "deprecated": null
+    },
+    {
+      "id": "whisper-1",
+      "owned_by": "openai",
+      "mode": "audio_transcription",
+      "endpoints": [
+        "/v1/audio/transcriptions"
+      ],
+      "min_tier": 0,
+      "rpm": 10000,
+      "audio_input": null,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0,
+        "cached_input": 0,
+        "output": 0.006,
+        "input_cost_per_second": 0.0001
+      },
+      "deprecated": "2027-02-26"
+    },
+    {
+      "id": "gemini-2.5-flash-tts",
+      "owned_by": "google",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/completions",
+        "/v1/text:synthesize"
+      ],
+      "min_tier": 0,
+      "rpm": 1000,
+      "audio_input": null,
+      "audio_output": true,
+      "realtime": false,
+      "pricing": {
+        "input": 0.5,
+        "cached_input": 0.25,
+        "audio_output": 10,
+        "output": 10
+      },
+      "deprecated": null
+    },
+    {
+      "id": "gemini-2.5-pro",
+      "owned_by": "google",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/completions"
+      ],
+      "min_tier": 1,
+      "rpm": 10000,
+      "audio_input": true,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 1.25,
+        "cached_input": 0.625,
+        "output": 10,
+        "input_above_200k": 2.5,
+        "output_above_200k": 15,
+        "audio_input": 1.25,
+        "audio_input_above_200k": 2.5,
+        "audio_cached_input": 1.5,
+        "audio_output": 10,
+        "audio_output_above_200k": 15
+      },
+      "deprecated": "2026-10-20"
+    },
+    {
+      "id": "gemini-3.1-flash-lite",
+      "owned_by": "google",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/completions"
+      ],
+      "min_tier": 0,
+      "rpm": 25000,
+      "audio_input": true,
+      "audio_output": false,
+      "realtime": false,
+      "pricing": {
+        "input": 0.25,
+        "cached_input": 0.025,
+        "output": 1.5,
+        "audio_input": 0.5,
+        "audio_cached_input": 0.05,
+        "audio_output": 1.5
+      },
+      "deprecated": "2027-05-07"
+    },
+    {
+      "id": "gemini-3.1-flash-lite-preview",
+      "owned_by": "google",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/completions"
+      ],
+      "min_tier": 0,
+      "rpm": 25000,
+      "audio_input": true,
+      "audio_output": false,
+      "realtime": false,
+      "pricing": {
+        "input": 0.25,
+        "cached_input": 0.025,
+        "output": 1.5,
+        "audio_input": 0.5,
+        "audio_cached_input": 0.05,
+        "audio_output": 1.5
+      },
+      "deprecated": null
+    },
+    {
+      "id": "gemini-3.1-pro-preview",
+      "owned_by": "google",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/completions"
+      ],
+      "min_tier": 1,
+      "rpm": 10000,
+      "audio_input": true,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 2,
+        "cached_input": 0.825,
+        "output": 12,
+        "input_above_200k": 4,
+        "output_above_200k": 18,
+        "audio_input": 7,
+        "audio_cached_input": 1.5,
+        "audio_output": 7
+      },
+      "deprecated": null
+    },
+    {
+      "id": "gemini-3.5-flash",
+      "owned_by": "google",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/completions"
+      ],
+      "min_tier": 0,
+      "rpm": 25000,
+      "audio_input": true,
+      "audio_output": false,
+      "realtime": false,
+      "pricing": {
+        "input": 1.5,
+        "cached_input": 0.25,
+        "output": 9,
+        "audio_input": 1,
+        "audio_cached_input": 0.5,
+        "audio_output": 1
+      },
+      "deprecated": "2027-05-19"
+    },
+    {
+      "id": "gemini-3.5-flash-lite",
+      "owned_by": "google",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/completions"
+      ],
+      "min_tier": 0,
+      "rpm": 25000,
+      "audio_input": true,
+      "audio_output": false,
+      "realtime": false,
+      "pricing": {
+        "input": 0.3,
+        "cached_input": 0.03,
+        "output": 2.5
+      },
+      "deprecated": "2027-07-21"
+    },
+    {
+      "id": "gemini-3.6-flash",
+      "owned_by": "google",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/completions"
+      ],
+      "min_tier": 0,
+      "rpm": 25000,
+      "audio_input": true,
+      "audio_output": false,
+      "realtime": false,
+      "pricing": {
+        "input": 1.5,
+        "cached_input": 0.15,
+        "output": 7.5
+      },
+      "deprecated": "2026-11-19"
+    },
+    {
+      "id": "gemini-3.7-flash",
+      "owned_by": "google",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/completions"
+      ],
+      "min_tier": 0,
+      "rpm": 25000,
+      "audio_input": true,
+      "audio_output": false,
+      "realtime": false,
+      "pricing": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 3.75
+      },
+      "deprecated": "2027-01-28"
+    },
+    {
+      "id": "gemini-3.8-flash",
+      "owned_by": "google",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/completions"
+      ],
+      "min_tier": 0,
+      "rpm": 25000,
+      "audio_input": true,
+      "audio_output": false,
+      "realtime": false,
+      "pricing": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 3.75
+      },
+      "deprecated": null
+    },
+    {
+      "id": "gemini-4-argon",
+      "owned_by": "google",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/completions"
+      ],
+      "min_tier": 0,
+      "rpm": 10000,
+      "audio_input": true,
+      "audio_output": false,
+      "realtime": false,
+      "pricing": {
+        "input": 2,
+        "cached_input": 0.1,
+        "output": 10
+      },
+      "deprecated": null
+    },
+    {
+      "id": "gemini-4-carbon",
+      "owned_by": "google",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/completions"
+      ],
+      "min_tier": 0,
+      "rpm": 10000,
+      "audio_input": true,
+      "audio_output": false,
+      "realtime": false,
+      "pricing": {
+        "input": 2,
+        "cached_input": 0.1,
+        "output": 10
+      },
+      "deprecated": null
+    },
+    {
+      "id": "gemini-4-hydrogen",
+      "owned_by": "google",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/completions"
+      ],
+      "min_tier": 0,
+      "rpm": 10000,
+      "audio_input": true,
+      "audio_output": false,
+      "realtime": false,
+      "pricing": {
+        "input": 1.5,
+        "cached_input": 0.075,
+        "output": 7.5
+      },
+      "deprecated": null
+    },
+    {
+      "id": "gemini-flash-latest",
+      "owned_by": "google",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/completions"
+      ],
+      "min_tier": 0,
+      "rpm": 10000,
+      "audio_input": true,
+      "audio_output": false,
+      "realtime": false,
+      "pricing": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 3.75
+      },
+      "deprecated": null
+    },
+    {
+      "id": "gemini-flash-lite-latest",
+      "owned_by": "google",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/completions"
+      ],
+      "min_tier": 0,
+      "rpm": 10000,
+      "audio_input": true,
+      "audio_output": false,
+      "realtime": false,
+      "pricing": {
+        "input": 0.3,
+        "cached_input": 0.03,
+        "output": 2.5,
+        "audio_input": 0.5,
+        "audio_cached_input": 0.05,
+        "audio_output": 1.5
+      },
+      "deprecated": null
+    },
+    {
+      "id": "gpt-audio",
+      "owned_by": "openai",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/realtime"
+      ],
+      "min_tier": 1,
+      "rpm": 10000,
+      "audio_input": true,
+      "audio_output": true,
+      "realtime": true,
+      "pricing": {
+        "input": 2.5,
+        "cached_input": 1.25,
+        "audio_input": 32,
+        "output": 10,
+        "audio_output": 64
+      },
+      "deprecated": "2027-01-20"
+    },
+    {
+      "id": "gpt-audio-1.5",
+      "owned_by": "openai",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions"
+      ],
+      "min_tier": 1,
+      "rpm": 10000,
+      "audio_input": true,
+      "audio_output": true,
+      "realtime": false,
+      "pricing": {
+        "input": 2.5,
+        "cached_input": 1.25,
+        "audio_input": 32,
+        "output": 10,
+        "audio_output": 64
+      },
+      "deprecated": null
+    },
+    {
+      "id": "gpt-audio-2025-08-28",
+      "owned_by": "openai",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/realtime"
+      ],
+      "min_tier": 1,
+      "rpm": 10000,
+      "audio_input": true,
+      "audio_output": true,
+      "realtime": true,
+      "pricing": {
+        "input": 2.5,
+        "cached_input": 1.25,
+        "audio_input": 32,
+        "output": 10,
+        "audio_output": 64
+      },
+      "deprecated": "2027-01-20"
+    },
+    {
+      "id": "gpt-audio-mini",
+      "owned_by": "openai",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/realtime"
+      ],
+      "min_tier": 0,
+      "rpm": 10000,
+      "audio_input": true,
+      "audio_output": true,
+      "realtime": true,
+      "pricing": {
+        "input": 0.6,
+        "cached_input": 0.3,
+        "audio_input": 10,
+        "output": 2.4,
+        "audio_output": 20
+      },
+      "deprecated": "2027-01-20"
+    },
+    {
+      "id": "gpt-audio-mini-2025-10-06",
+      "owned_by": "openai",
+      "mode": "chat",
+      "endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/realtime"
+      ],
+      "min_tier": 0,
+      "rpm": 10000,
+      "audio_input": true,
+      "audio_output": true,
+      "realtime": true,
+      "pricing": {
+        "input": 0.6,
+        "cached_input": 0.3,
+        "audio_input": 10,
+        "output": 2.4,
+        "audio_output": 20
+      },
+      "deprecated": "2026-07-23"
+    },
+    {
+      "id": "grok-4.20-beta-0309-non-reasoning",
+      "owned_by": "xai",
+      "mode": "chat",
+      "endpoints": [],
+      "min_tier": 0,
+      "rpm": 40,
+      "audio_input": true,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 2,
+        "input_above_200K": 4,
+        "cached_input": 0.2,
+        "cached_input_above_200K": 0.4,
+        "output": 6,
+        "output_above_200K": 12
+      },
+      "deprecated": null
+    },
+    {
+      "id": "grok-4.20-beta-0309-reasoning",
+      "owned_by": "xai",
+      "mode": "chat",
+      "endpoints": [],
+      "min_tier": 0,
+      "rpm": 30,
+      "audio_input": true,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 2,
+        "input_above_200K": 4,
+        "cached_input": 0.2,
+        "cached_input_above_200K": 0.4,
+        "output": 6,
+        "output_above_200K": 12
+      },
+      "deprecated": null
+    },
+    {
+      "id": "grok-4.20-non-reasoning",
+      "owned_by": "xai",
+      "mode": "chat",
+      "endpoints": [],
+      "min_tier": 0,
+      "rpm": 400,
+      "audio_input": true,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 2,
+        "input_above_200K": 4,
+        "cached_input": 0.2,
+        "cached_input_above_200K": 0.4,
+        "output": 6,
+        "output_above_200K": 12
+      },
+      "deprecated": null
+    },
+    {
+      "id": "grok-4.20-reasoning",
+      "owned_by": "xai",
+      "mode": "chat",
+      "endpoints": [],
+      "min_tier": 0,
+      "rpm": 400,
+      "audio_input": true,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 2,
+        "input_above_200K": 4,
+        "cached_input": 0.2,
+        "cached_input_above_200K": 0.4,
+        "output": 6,
+        "output_above_200K": 12
+      },
+      "deprecated": null
+    },
+    {
+      "id": "grok-4.3",
+      "owned_by": "xai",
+      "mode": "chat",
+      "endpoints": [],
+      "min_tier": 0,
+      "rpm": 400,
+      "audio_input": true,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 1.25,
+        "input_above_200K": 2.5,
+        "cached_input": 0.2,
+        "cached_input_above_200K": 0.4,
+        "output": 2.5,
+        "output_above_200K": 5
+      },
+      "deprecated": null
+    },
+    {
+      "id": "gemini-decision-1",
+      "owned_by": "google",
+      "mode": "decisions",
+      "endpoints": [
+        "/v1/decisions"
+      ],
+      "min_tier": 0,
+      "rpm": 10000,
+      "audio_input": true,
+      "audio_output": false,
+      "realtime": false,
+      "pricing": {
+        "input": 0.1,
+        "cached_input": 0,
+        "output": 0
+      },
+      "deprecated": null
+    },
+    {
+      "id": "cf.clef-omni",
+      "owned_by": "cloudflare",
+      "mode": "evaluation",
+      "endpoints": [],
+      "min_tier": 0,
+      "rpm": 750,
+      "audio_input": true,
+      "audio_output": null,
+      "realtime": false,
+      "pricing": {
+        "input": 0.15,
+        "cached_input": 0,
+        "output": 0
+      },
+      "deprecated": null
+    }
+  ]
+}

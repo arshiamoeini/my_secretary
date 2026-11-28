@@ -1,0 +1,67 @@
+{
+  "simulate": false,
+  "dry_run": false,
+  "allow_dial": false,
+  "allowlist": ["09121234567"],
+  "max_calls": 2,
+  "listen_seconds": 8,
+  "listen_until_silence": true,
+  "silence_ms": 1200,
+  "announce_ai": true,
+  "keep_audio": false,
+
+  "adb": {
+    "path": "adb",
+    "serial": "",
+    "wireless": ""
+  },
+
+  "audio": {
+    "backend": "auto",
+    "input": "",
+    "output": "",
+    "ffmpeg": "",
+    "min_rms": 0.004,
+    "_note": "Empty ffmpeg = vendor/ffmpeg/ffmpeg.exe if present, else PATH. The ffmpeg capture backend is only chosen when audio.input names a device; otherwise Windows MCI records from the default device."
+  },
+
+  "tts": {
+    "engine": "aval",
+    "voice": "",
+    "rate": 0,
+    "command": "",
+    "_note": "engine: sapi (Windows voices, cannot read Persian) | cmd (Piper, eSpeak-NG) | aval (Aval.ai voices — the route measured on real Persian speech in bench/voice/VOICE-RESULTS.md)"
+  },
+
+  "stt": {
+    "engine": "aval",
+    "command": "",
+    "language": "fa",
+    "timeout_ms": 120000,
+    "_note": "engine: aval (Aval transcription models) | cmd (local whisper.cpp through the command below). Leave stt.command empty when using aval."
+  },
+
+  "aval": {
+    "base_url": "https://api.avalai.ir/v1",
+    "api_key": "",
+    "_api_key_note": "Leave empty to reuse the Aval key already configured for the agent (AVAL_API_KEY, or the avalai provider in the OpenCode config). The key is never logged and is redacted from API error text.",
+    "tts_model": "eleven_v4_turbo",
+    "tts_voice": "onwK4e9ZLuTAKqWW03F9",
+    "tts_format": "mp3",
+    "_format_note": "ElevenLabs through Aval serves mp3 only (wav/pcm answer HTTP 503), and the bridge decodes it with the ffmpeg below before playback. A tool-free alternative measured in the same bench: tts_model=gemini-3.8-flash-lite-tts, tts_voice=Kore, tts_format=wav.",
+    "ffmpeg": "",
+    "wav_sample_rate": 16000,
+    "tts_sample_rate": 44100,
+    "tts_persian": true,
+    "stt_model": "scribe_v2",
+    "stt_language": "fa",
+    "stt_prompt": "دفتر مدرسه، ولی دانش‌آموز، غیبت، اجازه خروج، شماره تماس",
+    "timeout_ms": 30000,
+    "budget_usd_per_call": 0.15,
+    "_budget_note": "Cloud voice is billed per turn. Once a call has spent this, phone_say and phone_listen return voice-budget-exceeded instead of running up a bill. $0.15 ≈ two minutes on the pinned pair (eleven_v4_turbo $0.0007/s + scribe_v2 $0.000062/s)."
+  },
+
+  "agent": {
+    "model": "grok-4-fast-non-reasoning"
+  }
+}

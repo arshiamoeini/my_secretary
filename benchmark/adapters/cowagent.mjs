@@ -3,6 +3,7 @@ import net from "node:net";
 import path from "node:path";
 import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { firstCallerMessage, emptyUsage, addUsage, usageDelta, openAIUsage } from "../lib/conversation.mjs";
 
 // CowAgent has no one-shot CLI, so it is driven through the OpenAI-compatible
 // HTTP endpoint it exposes when `external_api_enabled` is on. One server
@@ -169,5 +170,139 @@ export async function run({ sandbox, prompt, runDir, timeoutMs = 300000 }) {
     humanEvents: [],
     error: body ? null : errText,
     raw: { stdoutTail: stdout.slice(-3000), stderrTail: stderr.slice(-3000), httpStatus },
+  };
+}
+
+async function postChat(port, token, messages, timeoutMs) {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), Math.max(30000, timeoutMs));
+  try {
+    const r = await fetch(`http://127.0.0.1:${port}/v1/chat/completions`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+      body: JSON.stringify({ messages, stream: false }),
+      signal: ctrl.signal,
+    });
+    const txt = await r.text();
+    if (!r.ok) return { ok: false, status: r.status, error: txt.slice(0, 1500) };
+    try {
+      return { ok: true, status: r.status, body: JSON.parse(txt) };
+    } catch {
+      return { ok: false, status: r.status, error: txt.slice(0, 1500) };
+    }
+  } catch (e) {
+    return { ok: false, status: 0, error: String(e) };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+/**
+ * Interactive phone-call mode: start one server, then send each caller turn as
+ * a separate chat completion. Server startup is timed as `setupMs`; every
+ * caller->agent exchange gets its own `ms`. The post-call file-writing turn is
+ * timed separately as `postMs`.
+ */
+export async function converse({ sandbox, prompt, conversation, post, runDir, timeoutMs = 300000 }) {
+  const dataDir = path.join(runDir, "data");
+  const port = await freePort();
+  const token = "bench-" + Math.random().toString(36).slice(2);
+  writeConfig({ dataDir, sandbox, port, token });
+
+  const env = {
+    ...process.env,
+    COW_DATA_DIR: dataDir,
+    PYTHONIOENCODING: "utf-8",
+    PYTHONUNBUFFERED: "1",
+    NO_COLOR: "1",
+  };
+
+  const started = Date.now();
+  const child = spawn(PY, ["app.py"], { cwd: COW_DIR, env, windowsHide: true });
+  let stdout = "";
+  let stderr = "";
+  child.stdout.on("data", (d) => (stdout += d));
+  child.stderr.on("data", (d) => (stderr += d));
+
+  const kill = () => {
+    try {
+      if (process.platform === "win32") spawn("taskkill", ["/PID", String(child.pid), "/T", "/F"], { windowsHide: true });
+      else child.kill("SIGKILL");
+    } catch { /* ignore */ }
+  };
+
+  const up = await waitPort(port, Math.min(120000, timeoutMs));
+  const setupMs = Date.now() - started;
+  if (!up) {
+    kill();
+    return {
+      ok: false, exitCode: -1, durationMs: Date.now() - started, setupMs,
+      usage: null, steps: null, text: "", humanEvents: [], turnTimings: [], postMs: null, postReply: "",
+      error: "server did not start",
+      raw: { stdoutTail: stdout.slice(-3000), stderrTail: stderr.slice(-3000) },
+    };
+  }
+
+  const usage = emptyUsage();
+  const turnTimings = [];
+  let totalSteps = 0;
+  let error = null;
+  let lastReply = "";
+  const messages = [{ role: "user", content: firstCallerMessage(prompt, conversation[0]) }];
+
+  for (let i = 0; i < conversation.length; i++) {
+    if (i > 0) messages.push({ role: "user", content: conversation[i] });
+    const before = { ...usage };
+    const t0 = Date.now();
+    const r = await postChat(port, token, messages, timeoutMs - (Date.now() - started));
+    const ms = Date.now() - t0;
+    if (!r.ok) { error = r.error; break; }
+    const u = openAIUsage(r.body);
+    addUsage(usage, u);
+    const reply = r.body?.choices?.[0]?.message?.content || "";
+    if (typeof reply !== "string") lastReply = JSON.stringify(reply);
+    else lastReply = reply;
+    messages.push({ role: "assistant", content: lastReply });
+    totalSteps += r.body?.cowagent?.steps ?? r.body?.usage?.steps ?? 0;
+    turnTimings.push({ turn: i, caller: conversation[i], reply: lastReply, ms, usage: u ? usageDelta(before, usage) : null });
+  }
+
+  let postMs = null;
+  let postReply = "";
+  if (!error && post) {
+    messages.push({ role: "user", content: post });
+    const before = { ...usage };
+    const t0 = Date.now();
+    const r = await postChat(port, token, messages, timeoutMs - (Date.now() - started));
+    postMs = Date.now() - t0;
+    if (!r.ok) error = r.error;
+    else {
+      const u = openAIUsage(r.body);
+      addUsage(usage, u);
+      postReply = r.body?.choices?.[0]?.message?.content || "";
+      totalSteps += r.body?.cowagent?.steps ?? r.body?.usage?.steps ?? 0;
+    }
+  }
+
+  const durationMs = Date.now() - started;
+  kill();
+
+  fs.writeFileSync(path.join(runDir, "conversation.json"), JSON.stringify({ prompt, conversation, turnTimings, post, postMs, postReply, usage }, null, 2));
+  return {
+    ok: !error,
+    exitCode: error ? 1 : 0,
+    durationMs,
+    setupMs,
+    setupNote: "server startup (port ready) before the first caller turn",
+    turnTimings,
+    postMs,
+    postReply,
+    usage,
+    steps: totalSteps || null,
+    toolFailures: null,
+    text: turnTimings.map((t) => t.reply).filter(Boolean).join("\n\n") || postReply,
+    humanEvents: [],
+    error,
+    raw: { stdoutTail: stdout.slice(-3000), stderrTail: stderr.slice(-3000) },
   };
 }

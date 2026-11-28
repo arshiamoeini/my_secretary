@@ -1,0 +1,366 @@
+{
+  "created": "2026-11-24T21:21:19.469Z",
+  "note": "Real recorded Persian speech from public datasets; phone.wav emulates the 8 kHz narrow-band path of a telephone call.",
+  "sources": [
+    {
+      "dataset": "hezarai/common-voice-13-fa",
+      "split": "train",
+      "ref_field": "sentence",
+      "license": "CC0"
+    },
+    {
+      "dataset": "vhdm/persian-voice-v1",
+      "split": "train",
+      "ref_field": "corrected_sentence",
+      "license": "see SOURCES.md"
+    },
+    {
+      "dataset": "C1Tech/Persian-ASR-Benchmark",
+      "split": "train",
+      "ref_field": "transcription",
+      "license": "see SOURCES.md"
+    }
+  ],
+  "clips": [
+    {
+      "id": "cv13-fa-dff1a804d5a92c31",
+      "source": "hezarai/common-voice-13-fa",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/hezarai/common-voice-13-fa/--/9d26f11ef10d28def0a41d5b4653fa80dea25229/--/default/train/0/audio/audio.mp3",
+      "licence": "CC0",
+      "domain": "read",
+      "validated": true,
+      "reference": "تا حرف پول به میان میآید گوشهایش را تیز میکند.",
+      "words": 10,
+      "seconds": 3.385,
+      "sha256": "dff1a804d5a92c31",
+      "files": {
+        "source": "clips\\cv13-fa-dff1a804d5a92c31\\source.mp3",
+        "full": "clips\\cv13-fa-dff1a804d5a92c31\\full.wav",
+        "phone": "clips\\cv13-fa-dff1a804d5a92c31\\phone.wav"
+      }
+    },
+    {
+      "id": "cv13-fa-88d66d3762ee79ac",
+      "source": "hezarai/common-voice-13-fa",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/hezarai/common-voice-13-fa/--/9d26f11ef10d28def0a41d5b4653fa80dea25229/--/default/train/11/audio/audio.mp3",
+      "licence": "CC0",
+      "domain": "read",
+      "validated": true,
+      "reference": "چک مدت دار",
+      "words": 3,
+      "seconds": 2.989,
+      "sha256": "88d66d3762ee79ac",
+      "files": {
+        "source": "clips\\cv13-fa-88d66d3762ee79ac\\source.mp3",
+        "full": "clips\\cv13-fa-88d66d3762ee79ac\\full.wav",
+        "phone": "clips\\cv13-fa-88d66d3762ee79ac\\phone.wav"
+      }
+    },
+    {
+      "id": "cv13-fa-04202e5016f013f0",
+      "source": "hezarai/common-voice-13-fa",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/hezarai/common-voice-13-fa/--/9d26f11ef10d28def0a41d5b4653fa80dea25229/--/default/train/18/audio/audio.mp3",
+      "licence": "CC0",
+      "domain": "read",
+      "validated": true,
+      "reference": "هر کسی میتواند به آن دسترسی داشته باشد",
+      "words": 8,
+      "seconds": 4.057,
+      "sha256": "04202e5016f013f0",
+      "files": {
+        "source": "clips\\cv13-fa-04202e5016f013f0\\source.mp3",
+        "full": "clips\\cv13-fa-04202e5016f013f0\\full.wav",
+        "phone": "clips\\cv13-fa-04202e5016f013f0\\phone.wav"
+      }
+    },
+    {
+      "id": "cv13-fa-33d553cfd5626c40",
+      "source": "hezarai/common-voice-13-fa",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/hezarai/common-voice-13-fa/--/9d26f11ef10d28def0a41d5b4653fa80dea25229/--/default/train/26/audio/audio.mp3",
+      "licence": "CC0",
+      "domain": "read",
+      "validated": true,
+      "reference": "انگلیس و امریکا جنگ را بردند.",
+      "words": 6,
+      "seconds": 3.781,
+      "sha256": "33d553cfd5626c40",
+      "files": {
+        "source": "clips\\cv13-fa-33d553cfd5626c40\\source.mp3",
+        "full": "clips\\cv13-fa-33d553cfd5626c40\\full.wav",
+        "phone": "clips\\cv13-fa-33d553cfd5626c40\\phone.wav"
+      }
+    },
+    {
+      "id": "cv13-fa-5b7b89366479f39f",
+      "source": "hezarai/common-voice-13-fa",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/hezarai/common-voice-13-fa/--/9d26f11ef10d28def0a41d5b4653fa80dea25229/--/default/train/33/audio/audio.mp3",
+      "licence": "CC0",
+      "domain": "read",
+      "validated": true,
+      "reference": "احمد تقبل کرد که معلم آنها بشود.",
+      "words": 7,
+      "seconds": 5.149,
+      "sha256": "5b7b89366479f39f",
+      "files": {
+        "source": "clips\\cv13-fa-5b7b89366479f39f\\source.mp3",
+        "full": "clips\\cv13-fa-5b7b89366479f39f\\full.wav",
+        "phone": "clips\\cv13-fa-5b7b89366479f39f\\phone.wav"
+      }
+    },
+    {
+      "id": "cv13-fa-bb88155d6b0b6793",
+      "source": "hezarai/common-voice-13-fa",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/hezarai/common-voice-13-fa/--/9d26f11ef10d28def0a41d5b4653fa80dea25229/--/default/train/40/audio/audio.mp3",
+      "licence": "CC0",
+      "domain": "read",
+      "validated": true,
+      "reference": "بیماری او وخیم است.",
+      "words": 4,
+      "seconds": 3.061,
+      "sha256": "bb88155d6b0b6793",
+      "files": {
+        "source": "clips\\cv13-fa-bb88155d6b0b6793\\source.mp3",
+        "full": "clips\\cv13-fa-bb88155d6b0b6793\\full.wav",
+        "phone": "clips\\cv13-fa-bb88155d6b0b6793\\phone.wav"
+      }
+    },
+    {
+      "id": "cv13-fa-16cf2ec27e3ad307",
+      "source": "hezarai/common-voice-13-fa",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/hezarai/common-voice-13-fa/--/9d26f11ef10d28def0a41d5b4653fa80dea25229/--/default/train/46/audio/audio.mp3",
+      "licence": "CC0",
+      "domain": "read",
+      "validated": true,
+      "reference": "زیبایی که ماورای اندیشههای بشر است",
+      "words": 6,
+      "seconds": 5.761,
+      "sha256": "16cf2ec27e3ad307",
+      "files": {
+        "source": "clips\\cv13-fa-16cf2ec27e3ad307\\source.mp3",
+        "full": "clips\\cv13-fa-16cf2ec27e3ad307\\full.wav",
+        "phone": "clips\\cv13-fa-16cf2ec27e3ad307\\phone.wav"
+      }
+    },
+    {
+      "id": "cv13-fa-4c1a82264e9635d1",
+      "source": "hezarai/common-voice-13-fa",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/hezarai/common-voice-13-fa/--/9d26f11ef10d28def0a41d5b4653fa80dea25229/--/default/train/52/audio/audio.mp3",
+      "licence": "CC0",
+      "domain": "read",
+      "validated": true,
+      "reference": "فیلم بیمزه و خستهکنندهای بود.",
+      "words": 5,
+      "seconds": 3.709,
+      "sha256": "4c1a82264e9635d1",
+      "files": {
+        "source": "clips\\cv13-fa-4c1a82264e9635d1\\source.mp3",
+        "full": "clips\\cv13-fa-4c1a82264e9635d1\\full.wav",
+        "phone": "clips\\cv13-fa-4c1a82264e9635d1\\phone.wav"
+      }
+    },
+    {
+      "id": "pvoice-823bdc3c40fbe501",
+      "source": "vhdm/persian-voice-v1",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/vhdm/persian-voice-v1/--/9698a3363a1163945cda89bbe417c495abc1da41/--/default/train/1/audio/audio.mp3",
+      "licence": "see SOURCES.md",
+      "domain": "read",
+      "validated": true,
+      "reference": "اول کفش‌ها را واکس بزن و بعداً برق بینداز.",
+      "words": 9,
+      "seconds": 4.969,
+      "sha256": "823bdc3c40fbe501",
+      "files": {
+        "source": "clips\\pvoice-823bdc3c40fbe501\\source.mp3",
+        "full": "clips\\pvoice-823bdc3c40fbe501\\full.wav",
+        "phone": "clips\\pvoice-823bdc3c40fbe501\\phone.wav"
+      }
+    },
+    {
+      "id": "pvoice-431e5f2c6cd45a7d",
+      "source": "vhdm/persian-voice-v1",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/vhdm/persian-voice-v1/--/9698a3363a1163945cda89bbe417c495abc1da41/--/default/train/12/audio/audio.mp3",
+      "licence": "see SOURCES.md",
+      "domain": "read",
+      "validated": true,
+      "reference": "رئیس شرکت ما",
+      "words": 3,
+      "seconds": 3.277,
+      "sha256": "431e5f2c6cd45a7d",
+      "files": {
+        "source": "clips\\pvoice-431e5f2c6cd45a7d\\source.mp3",
+        "full": "clips\\pvoice-431e5f2c6cd45a7d\\full.wav",
+        "phone": "clips\\pvoice-431e5f2c6cd45a7d\\phone.wav"
+      }
+    },
+    {
+      "id": "pvoice-99dc9f8d6c5670c0",
+      "source": "vhdm/persian-voice-v1",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/vhdm/persian-voice-v1/--/9698a3363a1163945cda89bbe417c495abc1da41/--/default/train/18/audio/audio.mp3",
+      "licence": "see SOURCES.md",
+      "domain": "read",
+      "validated": true,
+      "reference": "خاک را با بیل نرم کردم.",
+      "words": 6,
+      "seconds": 3.529,
+      "sha256": "99dc9f8d6c5670c0",
+      "files": {
+        "source": "clips\\pvoice-99dc9f8d6c5670c0\\source.mp3",
+        "full": "clips\\pvoice-99dc9f8d6c5670c0\\full.wav",
+        "phone": "clips\\pvoice-99dc9f8d6c5670c0\\phone.wav"
+      }
+    },
+    {
+      "id": "pvoice-808b8d4421e8688b",
+      "source": "vhdm/persian-voice-v1",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/vhdm/persian-voice-v1/--/9698a3363a1163945cda89bbe417c495abc1da41/--/default/train/25/audio/audio.mp3",
+      "licence": "see SOURCES.md",
+      "domain": "read",
+      "validated": true,
+      "reference": "براساس شواهد موجود به این نتیجه رسیدم که او نخواهد آمد.",
+      "words": 11,
+      "seconds": 5.437,
+      "sha256": "808b8d4421e8688b",
+      "files": {
+        "source": "clips\\pvoice-808b8d4421e8688b\\source.mp3",
+        "full": "clips\\pvoice-808b8d4421e8688b\\full.wav",
+        "phone": "clips\\pvoice-808b8d4421e8688b\\phone.wav"
+      }
+    },
+    {
+      "id": "pvoice-da948762c076fc84",
+      "source": "vhdm/persian-voice-v1",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/vhdm/persian-voice-v1/--/9698a3363a1163945cda89bbe417c495abc1da41/--/default/train/31/audio/audio.mp3",
+      "licence": "see SOURCES.md",
+      "domain": "read",
+      "validated": true,
+      "reference": "به او نگاهی شهوت‌آمیز کرد.",
+      "words": 5,
+      "seconds": 3.277,
+      "sha256": "da948762c076fc84",
+      "files": {
+        "source": "clips\\pvoice-da948762c076fc84\\source.mp3",
+        "full": "clips\\pvoice-da948762c076fc84\\full.wav",
+        "phone": "clips\\pvoice-da948762c076fc84\\phone.wav"
+      }
+    },
+    {
+      "id": "pvoice-d3bc619235ee1a3b",
+      "source": "vhdm/persian-voice-v1",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/vhdm/persian-voice-v1/--/9698a3363a1163945cda89bbe417c495abc1da41/--/default/train/37/audio/audio.mp3",
+      "licence": "see SOURCES.md",
+      "domain": "read",
+      "validated": true,
+      "reference": "خانه معدوم شدنی است ولی عشق به خدا نه.",
+      "words": 9,
+      "seconds": 5.149,
+      "sha256": "d3bc619235ee1a3b",
+      "files": {
+        "source": "clips\\pvoice-d3bc619235ee1a3b\\source.mp3",
+        "full": "clips\\pvoice-d3bc619235ee1a3b\\full.wav",
+        "phone": "clips\\pvoice-d3bc619235ee1a3b\\phone.wav"
+      }
+    },
+    {
+      "id": "pvoice-68b285de5d89ba59",
+      "source": "vhdm/persian-voice-v1",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/vhdm/persian-voice-v1/--/9698a3363a1163945cda89bbe417c495abc1da41/--/default/train/43/audio/audio.mp3",
+      "licence": "see SOURCES.md",
+      "domain": "read",
+      "validated": true,
+      "reference": "پری به گونه‌های خود پودر زد.",
+      "words": 6,
+      "seconds": 3.493,
+      "sha256": "68b285de5d89ba59",
+      "files": {
+        "source": "clips\\pvoice-68b285de5d89ba59\\source.mp3",
+        "full": "clips\\pvoice-68b285de5d89ba59\\full.wav",
+        "phone": "clips\\pvoice-68b285de5d89ba59\\phone.wav"
+      }
+    },
+    {
+      "id": "pvoice-2af7d5f0c1a1cdfb",
+      "source": "vhdm/persian-voice-v1",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/vhdm/persian-voice-v1/--/9698a3363a1163945cda89bbe417c495abc1da41/--/default/train/50/audio/audio.mp3",
+      "licence": "see SOURCES.md",
+      "domain": "read",
+      "validated": true,
+      "reference": "اتومبیل خاموش شد.",
+      "words": 3,
+      "seconds": 3.133,
+      "sha256": "2af7d5f0c1a1cdfb",
+      "files": {
+        "source": "clips\\pvoice-2af7d5f0c1a1cdfb\\source.mp3",
+        "full": "clips\\pvoice-2af7d5f0c1a1cdfb\\full.wav",
+        "phone": "clips\\pvoice-2af7d5f0c1a1cdfb\\phone.wav"
+      }
+    },
+    {
+      "id": "c1bench-6770a37315e6e356",
+      "source": "C1Tech/Persian-ASR-Benchmark",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/C1Tech/Persian-ASR-Benchmark/--/eedc3d60f19757b4527299c85f8da5723ee82ca6/--/default/train/0/audio/audio.wav",
+      "licence": "see SOURCES.md",
+      "domain": "conversational",
+      "validated": false,
+      "reference": "تنه می زنه ناخواسته این دومیه می افته ته دره بعد",
+      "words": 11,
+      "seconds": 7.763,
+      "sha256": "6770a37315e6e356",
+      "files": {
+        "source": "clips\\c1bench-6770a37315e6e356\\source.wav",
+        "full": "clips\\c1bench-6770a37315e6e356\\full.wav",
+        "phone": "clips\\c1bench-6770a37315e6e356\\phone.wav"
+      }
+    },
+    {
+      "id": "c1bench-80196e76dd07a574",
+      "source": "C1Tech/Persian-ASR-Benchmark",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/C1Tech/Persian-ASR-Benchmark/--/eedc3d60f19757b4527299c85f8da5723ee82ca6/--/default/train/20/audio/audio.wav",
+      "licence": "see SOURCES.md",
+      "domain": "conversational",
+      "validated": false,
+      "reference": "ببین تو باز ماجراهای زیادی در اسطوره ها افسانه ها",
+      "words": 10,
+      "seconds": 3.714,
+      "sha256": "80196e76dd07a574",
+      "files": {
+        "source": "clips\\c1bench-80196e76dd07a574\\source.wav",
+        "full": "clips\\c1bench-80196e76dd07a574\\full.wav",
+        "phone": "clips\\c1bench-80196e76dd07a574\\phone.wav"
+      }
+    },
+    {
+      "id": "c1bench-c1678b026b06a110",
+      "source": "C1Tech/Persian-ASR-Benchmark",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/C1Tech/Persian-ASR-Benchmark/--/eedc3d60f19757b4527299c85f8da5723ee82ca6/--/default/train/39/audio/audio.wav",
+      "licence": "see SOURCES.md",
+      "domain": "conversational",
+      "validated": false,
+      "reference": "چند تا فرصت در واقع درست کرد میلاد به نظر میرسه که",
+      "words": 12,
+      "seconds": 4.785,
+      "sha256": "c1678b026b06a110",
+      "files": {
+        "source": "clips\\c1bench-c1678b026b06a110\\source.wav",
+        "full": "clips\\c1bench-c1678b026b06a110\\full.wav",
+        "phone": "clips\\c1bench-c1678b026b06a110\\phone.wav"
+      }
+    },
+    {
+      "id": "c1bench-ee652aac1cabb698",
+      "source": "C1Tech/Persian-ASR-Benchmark",
+      "source_url": "https://datasets-server.huggingface.co/cached-assets/C1Tech/Persian-ASR-Benchmark/--/eedc3d60f19757b4527299c85f8da5723ee82ca6/--/default/train/56/audio/audio.wav",
+      "licence": "see SOURCES.md",
+      "domain": "conversational",
+      "validated": false,
+      "reference": "از یه دوره ای نمیتونست گوشت بخوره چون جنازه می دید",
+      "words": 11,
+      "seconds": 3.849,
+      "sha256": "ee652aac1cabb698",
+      "files": {
+        "source": "clips\\c1bench-ee652aac1cabb698\\source.wav",
+        "full": "clips\\c1bench-ee652aac1cabb698\\full.wav",
+        "phone": "clips\\c1bench-ee652aac1cabb698\\phone.wav"
+      }
+    }
+  ]
+}

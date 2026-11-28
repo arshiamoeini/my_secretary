@@ -135,7 +135,18 @@ async function main() {
 
     let res;
     try {
-      res = await adapter.run({ sandbox, prompt: job.task.prompt, runDir, timeoutMs: opt.timeout });
+      if (Array.isArray(job.task.conversation) && typeof adapter.converse === "function") {
+        res = await adapter.converse({
+          sandbox,
+          prompt: job.task.prompt,
+          conversation: job.task.conversation,
+          post: job.task.post,
+          runDir,
+          timeoutMs: opt.timeout,
+        });
+      } else {
+        res = await adapter.run({ sandbox, prompt: job.task.prompt, runDir, timeoutMs: opt.timeout });
+      }
     } catch (e) {
       res = { ok: false, exitCode: -1, durationMs: 0, usage: null, steps: null, text: "", humanEvents: [], error: String(e?.stack || e), raw: {} };
     }
@@ -173,15 +184,25 @@ async function main() {
       costUsd: costOf(res.usage),
       askedQuestion: asked,
       humanEvents: res.humanEvents || [],
+      setupMs: res.setupMs ?? null,
+      setupNote: res.setupNote ?? null,
+      turnTimings: res.turnTimings ?? null,
+      postMs: res.postMs ?? null,
+      postReply: res.postReply ?? null,
       finalText: (res.text || "").slice(0, 4000),
       sandbox,
       finishedAt: new Date().toISOString(),
     };
     done++;
+    const timing = Array.isArray(rec.turnTimings) && rec.turnTimings.length
+      ? ` turns=[${rec.turnTimings.map((t) => (t.ms / 1000).toFixed(1)).join(", ")}]` +
+        ` setup=${((rec.setupMs || 0) / 1000).toFixed(1)}s` +
+        ` post=${rec.postMs == null ? "-" : (rec.postMs / 1000).toFixed(1) + "s"}`
+      : "";
     console.log(
       `[${done}/${jobs.length}] ${job.tool.padEnd(8)} ${job.task.id.padEnd(30)} rep${job.rep} ` +
       `${check.pass ? "PASS" : "FAIL"} ${(res.durationMs / 1000).toFixed(1)}s ` +
-      `${rec.steps ?? "?"} steps $${rec.costUsd.toFixed(4)}${check.pass ? "" : "  <- " + check.detail.slice(0, 160)}`
+      `${rec.steps ?? "?"} steps $${rec.costUsd.toFixed(4)}${timing}${check.pass ? "" : "  <- " + check.detail.slice(0, 160)}`
     );
     collected.push(rec);
     save();

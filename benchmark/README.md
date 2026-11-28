@@ -80,3 +80,15 @@ Per-tool drivers live in `adapters/` (`openclaw.mjs`, `cowagent.mjs`,
 `openagent.mjs`, `vanilla.mjs`); the fixture is `school/` and each run gets a
 fresh copy under `runs/<tool>/<task>/r<rep>/work`, which is what the validators
 grade and what `revalidate.mjs` can re-grade later for free.
+
+### Optional phone capability (Vanilla)
+
+`vanilla.mjs` can additionally expose `phone_call`, `phone_say`, `phone_listen`,
+`phone_status` and `phone_hangup`, which place **real calls through the SIM in a
+local Android phone** (ADB control + local TTS/STT — no telephony API and no
+per-minute fee). It is off by default, so benchmark numbers are unchanged; set
+`PHONE_TOOL=1` to enable it. Real dialing also needs `PHONE_ALLOW_DIAL=1`, so an
+agent cannot call anyone on its own. `PHONE_SIMULATE=1` runs the same
+conversation loop against a scripted caller with no hardware. Full setup, audio
+routing, Persian voice and safety gates:
+[`../tools/phone-bridge/README.md`](../tools/phone-bridge/README.md).

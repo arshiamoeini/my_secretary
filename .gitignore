@@ -30,4 +30,11 @@ tools/openagent/err.txt
 tools/openagent/version
 
 # Nested tool checkouts and runtime directories
-/tools/
+/tools/*
+# first-party source, not a vendored checkout
+!/tools/phone-bridge/
+
+# Phone bridge local secrets and audit output
+tools/phone-bridge/phone.config.json
+tools/phone-bridge/vendor/
+tools/phone-bridge/node_modules/
